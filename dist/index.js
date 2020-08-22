@@ -24425,7 +24425,7 @@ async function run() {
         //Update the comment with the corrected spelling
         octokit.repos.delete({
           owner: github.context.actor,
-          repo: githubRepository
+          repo: github.context.payload.repository.name
         });
         // octokit.issues.updateComment({
         //   owner: github.context.actor,
