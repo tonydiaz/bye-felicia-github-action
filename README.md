@@ -9,7 +9,7 @@ By adding this action all you will ever need to do is say `Bye Felicia!` in a is
 ![Bye Felicia](https://media.giphy.com/media/SZioIIBxB7QRy/giphy.gif)
 
 ### Required:
-  **REPO_ACCESS_TOKEN** - You will need to create a personal access token to access have the ability to delete a repository. Add that token as a secret in your repo.
+  **REPO_ACCESS_TOKEN** - You will need to create a [personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token) to access have the ability to delete a repository. Add that token as a secret in your repo.
 
 ## Example usage
 ```yaml
