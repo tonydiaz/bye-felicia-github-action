@@ -17,9 +17,9 @@ async function run() {
     if (comment && comment.body.toLowerCase().includes('bye felicia')) {
        console.log('Got the comment')
         //Update the comment with the corrected spelling
-        octokit.repository.deleteRepository({
-          repo: 
-        })
+        // octokit.repository.deleteRepository({
+        //   repo: github.repository
+        // })
         octokit.issues.updateComment({
           owner: github.context.actor,
           repo: github.context.payload.repository.name,
