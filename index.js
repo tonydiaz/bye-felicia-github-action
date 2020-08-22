@@ -11,7 +11,7 @@ async function run() {
     const comment = github.context.payload.comment;
     console.log("github repository", githubRepository);
     console.log("github repository", github.repository);
-    // console.log("github.context", github.context);
+    console.log("github", github);
     // console.log("github.context.payload", github.context.payload);
 
     if (comment && comment.body.toLowerCase().includes('bye felicia')) {
