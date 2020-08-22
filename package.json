@@ -1,7 +1,7 @@
 {
-  "name": "javascript-action",
+  "name": "bye-felicia-github-action",
   "version": "1.0.0",
-  "description": "JavaScript Action Template",
+  "description": "👋 Felicia GitHub Action",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -25,7 +25,8 @@
   },
   "homepage": "https://github.com/actions/javascript-action#readme",
   "dependencies": {
-    "@actions/core": "^1.1.1"
+    "@actions/core": "^1.1.1",
+    "@actions/github": "^1.1.0"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.23.0",
