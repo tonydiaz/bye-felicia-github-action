@@ -24423,10 +24423,15 @@ async function run() {
     if (comment && comment.body.toLowerCase().includes('bye felicia')) {
        console.log('Got the comment')
         //Update the comment with the corrected spelling
-        octokit.repos.delete({
+        await octokit.repos.delete({
           owner: github.context.actor,
           repo: github.context.payload.repository.name
-        });
+        }).then(result => {
+          console.log("result", result)
+        }).catch(err => {
+          console.log("An error occurred:", err);
+          core.setFailed(err);
+        });;
         // octokit.issues.updateComment({
         //   owner: github.context.actor,
         //   repo: github.context.payload.repository.name,
