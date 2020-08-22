@@ -2,7 +2,7 @@
 
 GitHub action that will delete your repository. 
 
-We all have them repositories that gather dust. They aren't used anymore and no one cares. We don't do a good job cleaning up all the repositories we have. Although GitHub has no limit on repos we should removed unneeded repos. That is where ths Github Actions shines.
+We all have them, repositories that gather dust. They been updated in years, with no plans to ever touch them again. Repos that no one looks at, potentially using versions of software that are now depricated. Let's face it we don't do a good job cleaning up our old repositories. Cleanup of repos is where this Github Action shines.
 
 By adding this action all you will ever need to do is say `Bye Felicia!` in a issue comment and your repo is no more. 
 
@@ -16,5 +16,4 @@ By adding this action all you will ever need to do is say `Bye Felicia!` in a is
 uses: tonydiaz/bye-felicia-github-action@main
 with:
   github-secret: ${{ secrets.REPO_ACCESS_TOKEN }}
-  github-repository: ${{ github.repository }}
 ```
