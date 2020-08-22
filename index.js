@@ -5,16 +5,18 @@ const github = require('@actions/github');
 async function run() {
   try {
     const githubSecret = core.getInput("github-secret");
+    const githubRepository = core.getInput("github-repository");
   
     const octokit = new github.GitHub(githubSecret);
     const comment = github.context.payload.comment;
+    console.log("github repository", githubRepository);
     console.log("github.context", github.context);
     console.log("github.context.payload", github.context.payload);
 
     if (comment && comment.body.toLowerCase().includes('bye felicia')) {
        console.log('Got the comment')
         //Update the comment with the corrected spelling
-        octokit.repository.
+        // octokit.repository.
         octokit.issues.updateComment({
           owner: github.context.actor,
           repo: github.context.payload.repository.name,

@@ -4,6 +4,8 @@ description: 'Deletes your repository using this keyword in a comment'
 with:
   github-secret:  
     required: true 
+  github-repository:
+    required: true 
 runs:
   using: 'node12'
   main: 'dist/index.js'
